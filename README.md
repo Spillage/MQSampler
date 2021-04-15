@@ -2,7 +2,7 @@
 
 MQ JMeter Extension.
 
-A [JMeter](http://jmeter.apache.org/) Plugin to put and get message on [IBM MQ](https://www.ibm.com/products/mq) Queue, also publish message on Topic. It connect to MQ Server through server channel using ip address, port number, userID and password (if the channel has CHLAUTH rules).
+A [JMeter](http://jmeter.apache.org/) Plugin to publish mq message on Topic via ALIBABA MQ SDK.).
 
 ## Install
 
