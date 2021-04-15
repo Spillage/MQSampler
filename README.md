@@ -14,10 +14,8 @@ Install the extension `mqmeter-x.y.z.jar` into
 
     `$JMETER_HOME/lib/ext`.
 
-## Usage
 
-After installing `mqmeter`, you can choose two kind of Java Sampler, these are:
 
-### MQClientSampler
+## CHINESE
 
-Use it to put and get message (optional) on MQ queue. On JMeter add a Java Request Sampler and select the `MQClientSampler` class name. The following parameter are necessary.
+这是我练习的一个 jmeter 插件，用于测试 alibaba mq consumer的，基于 http 协议。
