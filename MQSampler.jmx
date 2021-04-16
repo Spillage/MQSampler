@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="mqmeter" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="mqsampler" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
@@ -30,24 +30,29 @@
         <JavaSampler guiclass="JavaTestSamplerGui" testclass="JavaSampler" testname="Publish message" enabled="true">
           <elementProp name="arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" enabled="true">
             <collectionProp name="Arguments.arguments">
-              <elementProp name="mq_http_endpoint" elementType="Argument">
-                <stringProp name="Argument.name">mq_http_endpoint</stringProp>
-                <stringProp name="Argument.value">127.0.0.1</stringProp>
+              <elementProp name="mq_instance_id" elementType="Argument">
+                <stringProp name="Argument.name">mq_instance_id</stringProp>
+                <stringProp name="Argument.value">${MQ_INSTANCE_ID}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="mq_topic" elementType="Argument">
+                <stringProp name="Argument.name">mq_topic</stringProp>
+                <stringProp name="Argument.value">${MQ_TOPIC}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="mq_access_key" elementType="Argument">
                 <stringProp name="Argument.name">mq_access_key</stringProp>
-                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.value">${MQ_ACCESS_KEY}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="mq_secret_key" elementType="Argument">
                 <stringProp name="Argument.name">mq_secret_key</stringProp>
-                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.value">${MQ_SECRET_KEY}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
-              <elementProp name="mq_instance_id" elementType="Argument">
-                <stringProp name="Argument.name">mq_instance_id</stringProp>
-                <stringProp name="Argument.value"></stringProp>
+              <elementProp name="mq_message_label" elementType="Argument">
+                <stringProp name="Argument.name">mq_message_label</stringProp>
+                <stringProp name="Argument.value">${MQ_MESSAGE_LABEL}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="mq_channel" elementType="Argument">
@@ -55,39 +60,34 @@
                 <stringProp name="Argument.value">CLIENT.TO.IOTMQ</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
-              <elementProp name="mq_topic" elementType="Argument">
-                <stringProp name="Argument.name">mq_topic</stringProp>
-                <stringProp name="Argument.value"></stringProp>
+              <elementProp name="mq_http_endpoint" elementType="Argument">
+                <stringProp name="Argument.name">mq_http_endpoint</stringProp>
+                <stringProp name="Argument.value">127.0.0.1</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="mq_message" elementType="Argument">
                 <stringProp name="Argument.name">mq_message</stringProp>
-                <stringProp name="Argument.value"></stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="mq_message_label" elementType="Argument">
-                <stringProp name="Argument.name">mq_message_label</stringProp>
-                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.value">${MQ_MESSAGE}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="mq_interval" elementType="Argument">
                 <stringProp name="Argument.name">mq_interval</stringProp>
-                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.value">${MQ_INTERVAL}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-              <elementProp name="mq_msg_key" elementType="Argument">
-                 <stringProp name="Argument.name">mq_msg_key</stringProp>
-                 <stringProp name="Argument.value"></stringProp>
-                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
               <elementProp name="mq_msg_cnt" elementType="Argument">
                 <stringProp name="Argument.name">mq_msg_cnt</stringProp>
-                <stringProp name="Argument.value">Hello MQ</stringProp>
+                <stringProp name="Argument.value">$MQ_MSG_CNT</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="mq_msg_key" elementType="Argument">
+                <stringProp name="Argument.name">mq_msg_key</stringProp>
+                <stringProp name="Argument.value">$MQ_MSG_KEY</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="classname">co.signal.mqmeter.MQPublishSampler</stringProp>
+          <stringProp name="classname">io.xielu.MQClientSampler</stringProp>
         </JavaSampler>
         <hashTree/>
       </hashTree>

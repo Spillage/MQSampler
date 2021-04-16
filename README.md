@@ -13,6 +13,8 @@ Build the extension:
 Install the extension `mqmeter-x.y.z.jar` into 
 
     `$JMETER_HOME/lib/ext`.
+    
+![Scrrenshot](mqsampler.png)     
 
 
 
