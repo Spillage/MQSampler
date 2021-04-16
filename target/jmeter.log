@@ -1,0 +1,40 @@
+2021-04-16 11:07:05,696 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-04-16 11:07:05,722 INFO o.a.j.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/5.4.1/libexec/bin/user.properties
+2021-04-16 11:07:05,723 INFO o.a.j.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/5.4.1/libexec/bin/system.properties
+2021-04-16 11:07:05,730 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-04-16 11:07:05,730 INFO o.a.j.JMeter: Version 5.4.1
+2021-04-16 11:07:05,730 INFO o.a.j.JMeter: java.version=15.0.2
+2021-04-16 11:07:05,730 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-04-16 11:07:05,730 INFO o.a.j.JMeter: os.name=Mac OS X
+2021-04-16 11:07:05,731 INFO o.a.j.JMeter: os.arch=x86_64
+2021-04-16 11:07:05,731 INFO o.a.j.JMeter: os.version=11.2.3
+2021-04-16 11:07:05,731 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-04-16 11:07:05,731 INFO o.a.j.JMeter: java.awt.headless=null
+2021-04-16 11:07:05,731 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-04-16 11:07:05,731 INFO o.a.j.JMeter: Available Processors =8
+2021-04-16 11:07:05,739 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-04-16 11:07:05,739 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-04-16 11:07:05,739 INFO o.a.j.JMeter: JMeterHome=/usr/local/Cellar/jmeter/5.4.1/libexec
+2021-04-16 11:07:05,739 INFO o.a.j.JMeter: user.dir  =/Users/xielu/IdeaProjects/MqSampler/target
+2021-04-16 11:07:05,740 INFO o.a.j.JMeter: PWD       =/Users/xielu/IdeaProjects/MqSampler/target
+2021-04-16 11:07:05,741 INFO o.a.j.JMeter: IP: 192.168.46.49 Name: xieludeMacBook-Pro.local FullName: 192.168.46.49
+2021-04-16 11:07:06,148 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2021-04-16 11:07:07,106 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-04-16 11:07:09,062 INFO o.j.r.JARSourceHTTP: Using proxy 127.0.0.1:6152
+2021-04-16 11:07:09,064 INFO o.j.r.JARSourceHTTP: Using proxy 127.0.0.1:6152
+2021-04-16 11:07:09,102 INFO o.j.r.JARSourceHTTP: Found cached repo
+2021-04-16 11:07:09,229 INFO o.j.r.JARSourceHTTP: Using proxy 127.0.0.1:6152
+2021-04-16 11:07:09,229 INFO o.j.r.PluginManager: Plugins Status: [mqmeter=2.1.1, jpgc-plugins-manager=1.6, jmeter-core=5.4.1, jmeter-ftp=5.4.1, jmeter-http=5.4.1, jmeter-jdbc=5.4.1, jmeter-jms=5.4.1, jmeter-junit=5.4.1, jmeter-java=5.4.1, jmeter-ldap=5.4.1, jmeter-mail=5.4.1, jmeter-mongodb=5.4.1, jmeter-native=5.4.1, jmeter-tcp=5.4.1, jmeter-components=5.4.1]
+2021-04-16 11:07:30,606 INFO o.a.j.s.FileServer: Default base='/Users/xielu/IdeaProjects/MqSampler/target'
+2021-04-16 11:07:30,633 INFO o.a.j.g.a.Load: Loading file: /Users/xielu/IdeaProjects/MqSampler/MQSampler.jmx
+2021-04-16 11:07:30,633 INFO o.a.j.s.FileServer: Set new base='/Users/xielu/IdeaProjects/MqSampler'
+2021-04-16 11:07:30,776 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-04-16 11:07:30,784 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-04-16 11:07:30,786 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-04-16 11:07:30,787 INFO o.a.j.s.SaveService: Loading file: /Users/xielu/IdeaProjects/MqSampler/MQSampler.jmx
+2021-04-16 11:07:31,060 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-04-16 11:07:31,060 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-04-16 11:07:31,060 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-04-16 11:07:31,060 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-04-16 11:07:31,234 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2021-04-16 11:07:31,375 INFO o.a.j.s.FileServer: Set new base='/Users/xielu/IdeaProjects/MqSampler'
